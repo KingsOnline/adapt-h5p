@@ -10,14 +10,19 @@ define(function(require) {
 
     var H5p = ComponentView.extend({
 
-        events: {
-            'inview': 'inview'
-        },
-
         preRender: function() {
             console.log(this);
             console.log(top.Frame0);
+            var that = this;
+            $(window).on("message", function(event) {
+                that.checkComplete();
+            });
             this.listenTo(Adapt, 'device:changed', this.resizeControl);
+        },
+
+        checkComplete: function() {
+            console.log('read message');
+            this.setCompletionStatus();
         },
 
         postRender: function() {
@@ -26,12 +31,6 @@ define(function(require) {
             this.$('.h5p-iframe').ready(function() {
                 that.resizeControl(Adapt.device.screenSize);
             });
-        },
-
-        inview: function(event, visible) {
-            if (visible) {
-                this.setCompletionStatus();
-            }
         },
 
         resizeControl: function(size) {
@@ -44,7 +43,7 @@ define(function(require) {
     });
 
     window.onmessage = function(e) {
-      console.log('h');
+        console.log('h');
         if (e.data == 'h5pComplete') {
             console.log('It works!');
         }
