@@ -44,8 +44,9 @@ define(function(require) {
     });
 
     window.onmessage = function(e) {
-        if (e.data == 'hello') {
-            alert('It works!');
+      console.log('h');
+        if (e.data == 'h5pComplete') {
+            console.log('It works!');
         }
     };
 
