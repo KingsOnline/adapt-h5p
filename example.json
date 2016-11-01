@@ -1,0 +1,24 @@
+{
+    "_id":"c-10",
+    "_parentId":"b-05",
+    "_type":"component",
+    "_component":"responsiveIframe",
+    "_classes":"",
+    "_layout":"full",
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_source": "course/en/embed/test.html",
+    "_scrolling": "no",
+    "_width": {
+        "_small" : 300,
+        "_medium" : 500,
+        "_large" : 750
+    },
+    "_height": {
+        "_small" : 250,
+        "_medium" : 350,
+        "_large" : 550
+    }
+}
