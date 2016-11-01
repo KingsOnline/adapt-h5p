@@ -1,17 +1,17 @@
 {
-  "name": "adapt-contrib-responsiveIframe",
+  "name": "adapt-h5p",
   "version": "1.0.1",
   "homepage": "https://github.com/LearningPool/adapt-contrib-responsiveIframe",
   "authors": [
     "Kevin Corry <kevinc@learningpool.com>"
   ],
   "description": "Allows embedded content inside an iframe tag that will respond to theme breakpoints.",
-  "main": "/js/adapt-contrib-responsiveIframe.js",
+  "main": "/js/adapt-h5p.js",
   "keywords": [
     "adapt-plugin",
     "adapt-component"
   ],
-  "displayName": "Responsive IFrame",
-  "component": "responsiveIframe",
+  "displayName": "H5P",
+  "component": "h5p",
   "license": "GPLv3"
 }
