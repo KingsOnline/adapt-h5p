@@ -11,8 +11,6 @@ define(function(require) {
     var H5p = ComponentView.extend({
 
         preRender: function() {
-            console.log(this);
-            console.log(top.Frame0);
             var that = this;
             $(window).on("message", function(event) {
                 that.checkComplete();
@@ -21,8 +19,9 @@ define(function(require) {
         },
 
         checkComplete: function() {
-            console.log('read message');
-            this.setCompletionStatus();
+            console.log(event);
+            if (event.data == this.model.get("_id"))
+                this.setCompletionStatus();
         },
 
         postRender: function() {
@@ -41,13 +40,6 @@ define(function(require) {
         }
 
     });
-
-    window.onmessage = function(e) {
-        console.log('h');
-        if (e.data == 'h5pComplete') {
-            console.log('It works!');
-        }
-    };
 
     Adapt.register("h5p", H5p);
 
