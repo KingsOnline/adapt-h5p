@@ -1,8 +1,3 @@
-/*
- * adapt-contrib-responsiveIframe
- * License - http://github.com/adaptlearning/adapt_framework/LICENSE
- * Maintainers - Kevin Corry <kevinc@learningpool.com>
- */
 define(function(require) {
 
     var ComponentView = require("coreViews/componentView");
@@ -20,8 +15,12 @@ define(function(require) {
 
         checkComplete: function() {
             console.log(event);
-            if (event.data == this.model.get("_id"))
+            if (event.data == (this.completeOn() + this.model.get("_id")))
                 this.setCompletionStatus();
+        },
+
+        completeOn: function() {
+          return this.model.get("_setCompletionOn");
         },
 
         postRender: function() {
