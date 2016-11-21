@@ -4,15 +4,15 @@ adapt-h5p
 An Adapt component that acts as a listener to H5P content and triggers completion.
 
 Attributes
+-----
 
 _setCompletionOn: *complete* requires the learner to reach the end of the content. *started* requires the learner to interact with the content.
 
 
-
-Usage
+Supported H5P content types
 -----
-Coming soon.
+H5P content types are required to be edited to send messages to Adapt. Currently supported content types are:
 
-Future applications
------
-Be able to apply CSS to the content
+* H5P-timeline https://github.com/KingsOnline/h5p-adapt-timeline
+
+
