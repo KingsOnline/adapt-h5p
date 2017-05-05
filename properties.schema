@@ -26,24 +26,24 @@
       "default": "",
       "inputType": "Text",
       "validators": ["required"],
-      "help": "The URL which will be rendered inside the <iframe>"
+      "help": "Get the URL by pressing embed on the content type and then copying the 'src'."
     },
     "_setCompletionOn": {
       "type": "string",
-      "required": true,
-      "enum": ["started", "ended"],
-      "default": "ended",
+      "required": false,
       "title": "Set completion of H5P content on",
+      "default": "started",
+      "enum": ["started", "ended"],
       "inputType": {
         "type": "Select",
         "options": ["started", "ended"]
       },
       "validators": ["required"],
-      "help": "This tells Adapt when to set the H5P content to complete."
+      "help": "This tells Adapt when the H5P content is complete."
     },
     "_scrolling": {
       "type": "string",
-      "required": true,
+      "required": false,
       "title": "Scrolling",
       "default": "no",
       "enum": ["auto", "yes", "no"],
@@ -64,6 +64,7 @@
           "required": true,
           "title": "Small width",
           "inputType": "Number",
+          "default": 300,
           "validators": ["number", "required"],
           "help": "Width with a small viewport"
         },
@@ -72,6 +73,7 @@
           "required": true,
           "title": "Medium width",
           "inputType": "Number",
+          "default": 500,
           "validators": ["number", "required"],
           "help": "Width with a medium viewport"
         },
@@ -80,6 +82,7 @@
           "required": true,
           "title": "Large width",
           "inputType": "Number",
+          "default": 750,
           "validators": ["number", "required"],
           "help": "Width with a large viewport"
         }
@@ -95,6 +98,7 @@
           "required": true,
           "title": "Small height",
           "inputType": "Number",
+          "default": 250,
           "validators": ["number", "required"],
           "help": "Height with a small viewport"
         },
@@ -103,6 +107,7 @@
           "required": true,
           "title": "Medium height",
           "inputType": "Number",
+          "default": 350,
           "validators": ["number", "required"],
           "help": "Height with a medium viewport"
         },
@@ -111,6 +116,7 @@
           "required": true,
           "title": "Large height",
           "inputType": "Number",
+          "default": 550,
           "validators": ["number", "required"],
           "help": "Height with a large viewport"
         }
