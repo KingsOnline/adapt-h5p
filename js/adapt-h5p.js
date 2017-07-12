@@ -14,7 +14,7 @@ define(function(require) {
         },
 
         checkComplete: function() {
-            console.log(event);
+            Adapt.log.debug(event);
             if (event.data == (this.completeOn() + this.model.get("_id")))
                 this.setCompletionStatus();
         },
