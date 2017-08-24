@@ -32,9 +32,7 @@ define(function(require) {
         },
 
         resizeControl: function(size) {
-            var width = this.$('.h5p-iframe').attr('data-width-' + size);
             var height = this.$('.h5p-iframe').attr('data-height-' + size);
-            this.$('.h5p-iframe').width(width);
             this.$('.h5p-iframe').height(height);
         }
 
