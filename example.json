@@ -9,7 +9,7 @@
   "displayTitle": "H5P component",
   "body": "This is Adapt component allows you to embed h5p content that has been modified to send a completition message. When the correct message is sent the component is set to complete.",
   "instruction": "",
-  "_source": "http://iddkingsonline.com/drupal/?q=h5p/embed/74",
+  "_source": "",
   "_setCompletionOn": "ended",
   "_scrolling": "no",
   "_width": {
