@@ -5,6 +5,8 @@ An Adapt component that acts as a listener to H5P content and messages Adapt whe
 
 Documentation on how to use available [here](https://docs.google.com/document/d/19W8MnpmZ17oILjlhGjXiGWDBso6oM6PZXAhEVKN38Qk/edit?usp=sharing).
 
+**Warning** - this plugin has ceased development and has been deprecated internally. This was due to the amount of effort required to maintain it to work with just a limited amount of plugins. We just use h5p in an iframe and remove it from the Page Level Progress extension.
+
 Attributes
 -----
 
